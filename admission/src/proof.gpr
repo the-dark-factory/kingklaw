@@ -1,0 +1,9 @@
+--  Re-prove KingKlaw's admission member from source:  gnatprove -P proof.gpr --level=2
+--  Expect: 0 unproved, 0 errors. Anything else and the artefact is not what it claims.
+project Proof is
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2022", "-gnatU", "-gnata");
+   end Compiler;
+end Proof;

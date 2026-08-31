@@ -1,0 +1,38 @@
+--  KingKlaw — admission member. The shared library that carries the C entry
+--  points, and nothing else.
+--
+--     ./build-lib.sh                 the ordinary way (see REPROVE.md)
+--     gprbuild -p -P kingklaw_admission.gpr
+--
+--  Produces lib/libkingklaw_admission.{dylib,so} exporting exactly two
+--  symbols: claw_admit_decide_codes and claw_admit_status_codes.
+--
+--  RUNTIME CLOSURE. A host should not have to install GNAT to use this. Where
+--  the platform supports it (Linux does; macOS does not), build-lib.sh asks for
+--  an ENCAPSULATED standalone library, which links the Ada runtime into the
+--  artefact so it has no Ada dependency of its own. Where it does not, the
+--  script falls back to a standard standalone library and vendors the runtime
+--  closure into lib/ beside it, which reaches the same place by a less tidy
+--  road. Either way the host needs no Ada toolchain — only the files in lib/.
+library project Kingklaw_Admission is
+
+   type Standalone_Type is ("standard", "encapsulated");
+   Standalone : Standalone_Type := external ("KINGKLAW_STANDALONE", "standard");
+
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Library_Name use "kingklaw_admission";
+   for Library_Dir use "lib";
+   for Library_Kind use "dynamic";
+   for Library_Interface use
+      ("Extension_Admission_Pkg",
+       "Extension_Admission_Abi_Pkg",
+       "Extension_Admission_Marshal_Pkg");
+   for Library_Standalone use Standalone;
+   for Library_Auto_Init use "true";
+
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2022", "-gnatU");
+   end Compiler;
+
+end Kingklaw_Admission;

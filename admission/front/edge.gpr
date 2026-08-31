@@ -1,0 +1,10 @@
+--  Build the command-line front:  gprbuild -P edge.gpr
+project Edge is
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   for Main use ("extension_admission_front.adb");
+   for Exec_Dir use ".";
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2022", "-gnatU");
+   end Compiler;
+end Edge;
