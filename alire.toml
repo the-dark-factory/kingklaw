@@ -1,0 +1,45 @@
+name = "kingklaw"
+description = "Proved extension-admission gate: six facts in, one verdict out, in SPARK"
+version = "0.1.1"
+authors = ["The Dark Factory Ltd"]
+maintainers = ["tony.gair@thedarkfactory.co.uk"]
+maintainers-logins = ["tonygair"]
+licenses = "AGPL-3.0-or-later"
+website = "https://github.com/the-dark-factory/kingklaw"
+tags = ["security", "spark", "formal-methods", "plugins", "supply-chain"]
+project-files = ["admission/kingklaw_admission.gpr"]
+
+long-description = """
+KingKlaw decides one question: may this extension artefact be admitted to
+load? It takes six facts about the artefact  -  whether a human asked for it,
+whether a pinned authority attests its bytes, whether those bytes were
+checked, whether a machine-checked proof exists and was re-discharged here,
+what proof standard this host requires, and whether it will run inside a
+boundary the host enforces  -  and returns one verdict.
+
+All 324 combinations of those facts have a proved verdict. The refusals are
+pinned as theorems, not merely tested: the postcondition names which refusal
+follows from which facts, so a refusal cannot silently become an admission
+under a later edit. Discharged with gnatprove at level 2 with no Assume, no
+SPARK_Mode Off and no justified checks.
+
+The core reads no clock, opens no file, allocates nothing and holds no state.
+It decides what FOLLOWS once the six facts are established; establishing them
+is the host's job. A host that answers "verified" without hashing anything
+will get an admission it did not earn, and no library can prevent that.
+
+Ada callers get the contracts, so gnatprove can prove the CALLER's use of the
+gate and not only the gate itself. A C header and a command-line front are
+also provided so a host in any language can use the same proved decider
+without an Ada toolchain.
+"""
+
+notes = "Build: gprbuild -p -P admission/kingklaw_admission.gpr, or admission/build-lib.sh for the full route including the C front and digests. Set KINGKLAW_STANDALONE=encapsulated on Linux to link the Ada runtime into the shared library so hosts need no GNAT; macOS does not support encapsulated libraries and build-lib.sh vendors the runtime closure into admission/lib/ instead. Re-proof instructions and the recorded gnatprove summary are in admission/REPROVE.md and admission/PROVE.txt. Requires GNAT 12 or later for -gnat2022."
+
+[build-switches]
+"*".style_checks = ["-gnaty"]
+
+[available.'case(os)']
+linux = true
+macos = true
+windows = false  # Untested.

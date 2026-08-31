@@ -3,9 +3,6 @@
 # The Ada sources are VENDORED copies of immutable wu round outputs, carrying
 # a licence comment block added by ada-factory scripts/stamp-licence.sh. Both
 # digests are recorded below so the derivation can be checked by anyone:
-#   stamped = stamp-licence(unstamped)
-# and each file also carries its own unstamped sha256 in its header. The
-# unstamped digests are what the proof, the ledger entry and the off-seat
 # admission signature refer to. The stamp is comments only; PROVE.txt is the
 # re-prove OF THE STAMPED SOURCES and matches the pre-stamp run exactly
 # (27 checks, 13 functional contracts, 14 termination, 0 unproved).
@@ -13,7 +10,7 @@
 # Verify shipped files:   shasum -a256 -c DIGESTS.sha256
 
 342bc9e82474c5b0f6dc55cbf3025701d30564c422802660fb6dad84b49bce93  PROVE.txt
-bd3a7735de3f9967652df8242dda15f1eeb3aebbd684b40a5f2a1d8fcf19d93d  REPROVE.md
+6d1df20fb7b0bd69f1e06b49e428cfddf81caadee4a821702d6e8aee08a9b8e9  REPROVE.md
 30d179df4cb669faa01e90cffdacef8c49eaf2f66c8e3e6e0e17fe1fa805df31  build-lib.sh
 acf7f403202da5dd2e77a143d2290f92ac5c64f5eb4202303322f8444a388f87  front/TABLE.tsv
 6e1d1b45208deee266d2ba15e776dcc151754c8571e32f2d1494afc05910f1e0  front/edge.gpr
@@ -34,6 +31,7 @@ a52735be61992c00ff54e24c6a692306771326fa8db85ebb5a7933e945f35555  src/proof.gpr
 6d73b91478090a234c5345402424dd30f4176e9fd92f596e49ec0ec7e3957865  tools/tablegen/main.go
 
 # --- unstamped upstream (wu round output) digests, for the Ada sources ---
+#   stamped = stamp-licence(unstamped)
 # f0312c893c5da9648b05c1800ecbe4dc57ccef249480b3f06b48482a26f1427b  front/extension_admission_front.adb  (unstamped)
 # 27c835a1ae2a005a71b6a4b286c011dd49e4c10e2a505afec3ebdd30fbdc31d0  front/extension_admission_pkg.ads  (unstamped)
 # 61bc7072b278076bf52a38594620f2bcc1a53433444bf08bb413d45b97cd564e  src/extension_admission_abi_pkg.ads  (unstamped)

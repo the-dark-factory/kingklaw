@@ -1,2 +1,4 @@
 obj/
 admission/lib/*.ali
+alire/
+config/
