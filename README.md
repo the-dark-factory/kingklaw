@@ -66,3 +66,19 @@ MIT. Take it, fork it, rename it, rewrite it in your own language from the
 truth table, or ignore it. Nothing is asked in return: no attribution
 requirement, no reciprocity, no dependency on anything of ours, no channel to
 maintain. A gate nobody can take is not a gate.
+
+---
+
+## Hardware
+
+Every line of Ada in this library was forged and proved on hardware bought
+outright and sitting in a house in South Shields: a Ryzen desktop with a couple
+of Radeons in it, and a small NVIDIA box that has twice shut itself down from
+the heat. The whole proven output of the factory behind this library — 93 cores
+— would have cost about six pounds at frontier API prices. It cost nothing,
+because nobody was renting us the machines.
+
+This is not a thinly veiled request for Apple or AMD to send private cloud
+hardware to South Shields.
+
+It would, however, be churlish to refuse.
