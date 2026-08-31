@@ -1,6 +1,6 @@
 /* abicheck — drive the shared library over the whole shipped truth table.
  *
- * SPDX-License-Identifier: MIT
+ * SPDX-License-Identifier: AGPL-3.0-or-later
  *
  * Reads TABLE.tsv (the 324-row table, token form) and checks that the C ABI
  * gives the same word and the same admit/refuse answer for every row as the

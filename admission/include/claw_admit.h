@@ -2,7 +2,7 @@
  *
  * KingKlaw. He bows to none.
  *
- * SPDX-License-Identifier: MIT
+ * SPDX-License-Identifier: AGPL-3.0-or-later
  * Origin: forged and machine-checked with SPARK/GNATprove. Source and
  * re-proof instructions ship beside this header (see REPROVE.md). Nothing
  * here calls home, reads a clock, opens a file, allocates, or keeps state.

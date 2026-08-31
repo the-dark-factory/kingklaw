@@ -62,10 +62,32 @@ Three ways to call it, in increasing order of intimacy:
 
 ## Licence
 
-MIT. Take it, fork it, rename it, rewrite it in your own language from the
-truth table, or ignore it. Nothing is asked in return: no attribution
-requirement, no reciprocity, no dependency on anything of ours, no channel to
-maintain. A gate nobody can take is not a gate.
+AGPL-3.0-or-later. Take it, fork it, rename it, rewrite it in your own
+language from the truth table, or ignore it. A gate nobody can take is not a
+gate.
+
+One condition, and it is the only one: **if you improve the gate, the
+improvement stays open.** You owe nothing to us — no attribution beyond the
+licence header, no telemetry, no channel to maintain, no dependency on
+anything of ours, no registration, no callback. You owe it to the next person
+running a claw, who deserves to be able to read the gate that decides what
+runs on their machine.
+
+Two ways of fitting it, and the licence reaches them differently:
+
+- **Run it as a separate binary** (`extension_admission_front`, facts in,
+  verdict word and exit code out — see FITTING.md §2). Your claw calls a
+  process. That is not linking, and the AGPL does not reach across it. Your
+  claw stays under whatever licence you like, closed source included. This is
+  the fitting we recommend anyway, because a gate in its own process is a gate
+  a loaded plugin cannot rewrite.
+- **Link the library** (`claw_admit.h`, `libkingklaw_admission`). Now the gate
+  is inside your program, and the AGPL comes with it.
+
+So: anybody may use it. Anybody who builds it into their own thing shares the
+gate back. If that is the wrong trade, the truth table is printed in
+FITTING.md §4, and a gate you write yourself from that table is yours and
+carries none of this. The point was never the code.
 
 ---
 

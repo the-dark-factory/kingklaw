@@ -581,12 +581,31 @@ better evidence that the tuple is constructible than any amount of prose here.
 
 ## 8. What we ask in return
 
-Nothing.
+Nothing for us. One thing for the next person.
 
-No attribution requirement, no reciprocity, no dependency on anything of
-ours, no telemetry, no channel to maintain, no support contract, no
-registration, no callback. Fork it, rename it, strip the header, rewrite it in
-your own language from the truth table, or ignore it entirely.
+The library is **AGPL-3.0-or-later**. No attribution requirement beyond the
+licence header, no dependency on anything of ours, no telemetry, no channel to
+maintain, no support contract, no registration, no callback. Fork it, rename
+it, rewrite it in your own language from the truth table, or ignore it
+entirely.
+
+The one condition is reciprocity on the gate itself: if you improve it, the
+improvement stays readable by whoever is running a claw with it. Somebody who
+lets software onto their machine on the strength of this gate ought to be able
+to read the gate.
+
+Where the condition applies:
+
+| How you fit it | Licence reach |
+|---|---|
+| Exec the front binary (§2) — facts in, verdict and exit code out | Separate process. AGPL does not reach your claw. Close your source if you want. |
+| Link `libkingklaw_admission` via `claw_admit.h` (§3) | The gate is in your program. AGPL comes with it. |
+| Write your own gate from the truth table in §4 | The licence does not reach it at all. The table is a fact about admission, not our property. |
+
+The exec route is the one we recommend on architectural grounds anyway — §6:
+a gate sitting inside the process that any admitted plugin can rewrite is not
+a gate — and it is also the route that asks least of you. Both routes are
+documented in full; pick either.
 
 Provenance rides in the licence header and in a one-line origin note inside
-the files. That is the whole of the leash, and it is not one.
+the files. That is the whole of the leash.

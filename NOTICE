@@ -1,0 +1,44 @@
+KingKlaw
+Copyright (C) 2026 Anthony Gair
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version. See LICENSE for the full text.
+
+The Ada sources under admission/src/ and admission/front/, the C surface in
+admission/include/claw_admit.h, the build and check tooling under
+admission/tools/ and admission/build-lib.sh, and the documentation are all
+covered by that licence.
+
+--------------------------------------------------------------------------
+Third-party binaries redistributed here
+--------------------------------------------------------------------------
+
+For the convenience of anyone fitting the gate without an Ada toolchain, this
+repository ships two Free Software Foundation runtime libraries alongside our
+own. They are NOT our work and are NOT under the AGPL:
+
+  admission/lib/libgnat-15.dylib   GNAT run-time library
+  admission/lib/libgcc_s.1.1.dylib GCC low-level run-time library
+
+Both come from GNAT 15.0.1 20250418, Copyright (C) 1996-2025 Free Software
+Foundation, Inc., built for arm64 macOS. They are licensed under the GNU
+General Public License version 3 or later, WITH the GCC Runtime Library
+Exception version 3.1 — which is what permits a program built with GNAT to be
+distributed under a licence of its author's choosing.
+
+WRITTEN OFFER OF SOURCE. The complete corresponding source for those two
+libraries is the GCC source tree from which they were built, published by the
+Free Software Foundation at https://gcc.gnu.org/ and mirrored by the FSF GNAT
+packaging used to build them. If you would rather have it from us, write to
+the address in the repository and we will send you a copy of that source, on
+a medium customarily used for software interchange, for no more than our cost
+of physically performing the distribution.
+
+If you do not want third-party binaries in your supply chain — a defensible
+position for a security library, and one we have sympathy with — delete
+admission/lib/ entirely, install FSF GNAT yourself, and rebuild from source
+with admission/build-lib.sh. admission/REPROVE.md walks the whole route,
+including re-discharging the proofs. The digests in admission/DIGESTS.sha256
+let you check that what you built matches what we shipped.

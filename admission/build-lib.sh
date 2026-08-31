@@ -3,7 +3,7 @@
 #  entry points, the command-line front, and the checker that keeps the C ABI
 #  honest against the shipped table.
 #
-#  SPDX-License-Identifier: MIT
+#  SPDX-License-Identifier: AGPL-3.0-or-later
 #
 #  This script BUILDS. It proves nothing. Proving is a separate command —
 #  `gnatprove -P src/proof.gpr --level=2` — and REPROVE.md is the instruction

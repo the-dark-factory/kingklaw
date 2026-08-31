@@ -1,6 +1,6 @@
 # Rebuild it and re-prove it yourself
 
-**SPDX-License-Identifier: MIT**
+**SPDX-License-Identifier: AGPL-3.0-or-later**
 
 This page exists because a prebuilt binary in a security component is worse
 than useless if it has to be trusted. What makes the shared library worth
