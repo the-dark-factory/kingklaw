@@ -72,9 +72,10 @@ maintain. A gate nobody can take is not a gate.
 ## Hardware
 
 Every line of Ada in this library was forged and proved on hardware bought
-outright and sitting in a house in South Shields: a Ryzen desktop with a couple
-of Radeons in it, and a small NVIDIA box that has twice shut itself down from
-the heat. The whole proven output of the factory behind this library — 93 cores
+outright and sitting in a house in South Shields: a MacBook Pro that has run
+the factory, the proofs and the writing without complaint for a year, a Ryzen
+desktop with a couple of Radeons in it, and a small NVIDIA box that has twice
+shut itself down from the heat. The whole proven output of the factory behind this library — 93 cores
 — would have cost about six pounds at frontier API prices. It cost nothing,
 because nobody was renting us the machines.
 
