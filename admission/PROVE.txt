@@ -1,34 +1,3 @@
-Phase 1 of 3: generation of data representation information ...
-Phase 2 of 3: generation of Global contracts ...
-Phase 3 of 3: flow analysis and proof ...
-extension_admission_marshal_pkg.ads:23:13: info: implicit aspect Always_Terminates on "Claw_Admit_Decide_Codes" has been proved, subprogram will terminate
-extension_admission_marshal_pkg.ads:36:19: info: postcondition proved
-extension_admission_marshal_pkg.ads:38:13: info: implicit aspect Always_Terminates on "Claw_Admit_Status_Codes" has been proved, subprogram will terminate
-extension_admission_marshal_pkg.ads:51:19: info: postcondition proved
-extension_admission_pkg.ads:89:13: info: implicit aspect Always_Terminates on "Meets_Floor" has been proved, subprogram will terminate
-extension_admission_pkg.ads:94:08: info: postcondition proved
-extension_admission_pkg.ads:98:13: info: implicit aspect Always_Terminates on "Is_Admissible" has been proved, subprogram will terminate
-extension_admission_pkg.ads:101:13: info: implicit aspect Always_Terminates on "Decide" has been proved, subprogram will terminate
-extension_admission_pkg.ads:112:08: info: postcondition proved
-extension_admission_abi_pkg.ads:57:13: info: implicit aspect Always_Terminates on "Operator_Of_Code" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:60:08: info: postcondition proved
-extension_admission_abi_pkg.ads:63:13: info: implicit aspect Always_Terminates on "Origin_Of_Code" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:66:08: info: postcondition proved
-extension_admission_abi_pkg.ads:70:13: info: implicit aspect Always_Terminates on "Integrity_Of_Code" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:73:08: info: postcondition proved
-extension_admission_abi_pkg.ads:77:13: info: implicit aspect Always_Terminates on "Proof_Of_Code" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:80:08: info: postcondition proved
-extension_admission_abi_pkg.ads:84:13: info: implicit aspect Always_Terminates on "Floor_Of_Code" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:87:08: info: postcondition proved
-extension_admission_abi_pkg.ads:91:13: info: implicit aspect Always_Terminates on "Containment_Of_Code" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:94:08: info: postcondition proved
-extension_admission_abi_pkg.ads:97:13: info: implicit aspect Always_Terminates on "Code_Of_Verdict" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:100:08: info: postcondition proved
-extension_admission_abi_pkg.ads:103:13: info: implicit aspect Always_Terminates on "Decide_Code" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:106:08: info: postcondition proved
-extension_admission_abi_pkg.ads:109:13: info: implicit aspect Always_Terminates on "Status_Of_Code" has been proved, subprogram will terminate
-extension_admission_abi_pkg.ads:112:08: info: postcondition proved
-Summary logged in /Users/tony/dev/kingklaw/admission/src/obj/gnatprove/gnatprove.out
 =========================
 Summary of SPARK analysis
 =========================
@@ -64,22 +33,22 @@ Detailed analysis report
 
 Analyzed 3 units
 in unit extension_admission_abi_pkg, 10 subprograms and packages out of 10 analyzed
-  Extension_Admission_Abi_Pkg at extension_admission_abi_pkg.ads:55 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (0 checks)
-  Extension_Admission_Abi_Pkg.Code_Of_Verdict at extension_admission_abi_pkg.ads:97 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Abi_Pkg.Containment_Of_Code at extension_admission_abi_pkg.ads:91 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Abi_Pkg.Decide_Code at extension_admission_abi_pkg.ads:103 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Abi_Pkg.Floor_Of_Code at extension_admission_abi_pkg.ads:84 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Abi_Pkg.Integrity_Of_Code at extension_admission_abi_pkg.ads:70 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Abi_Pkg.Operator_Of_Code at extension_admission_abi_pkg.ads:57 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Abi_Pkg.Origin_Of_Code at extension_admission_abi_pkg.ads:63 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Abi_Pkg.Proof_Of_Code at extension_admission_abi_pkg.ads:77 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Abi_Pkg.Status_Of_Code at extension_admission_abi_pkg.ads:109 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg at extension_admission_abi_pkg.ads:63 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (0 checks)
+  Extension_Admission_Abi_Pkg.Code_Of_Verdict at extension_admission_abi_pkg.ads:105 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg.Containment_Of_Code at extension_admission_abi_pkg.ads:99 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg.Decide_Code at extension_admission_abi_pkg.ads:111 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg.Floor_Of_Code at extension_admission_abi_pkg.ads:92 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg.Integrity_Of_Code at extension_admission_abi_pkg.ads:78 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg.Operator_Of_Code at extension_admission_abi_pkg.ads:65 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg.Origin_Of_Code at extension_admission_abi_pkg.ads:71 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg.Proof_Of_Code at extension_admission_abi_pkg.ads:85 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Abi_Pkg.Status_Of_Code at extension_admission_abi_pkg.ads:117 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
 in unit extension_admission_marshal_pkg, 3 subprograms and packages out of 3 analyzed
-  Extension_Admission_Marshal_Pkg at extension_admission_marshal_pkg.ads:21 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (0 checks)
-  Extension_Admission_Marshal_Pkg.Claw_Admit_Decide_Codes at extension_admission_marshal_pkg.ads:23 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Marshal_Pkg.Claw_Admit_Status_Codes at extension_admission_marshal_pkg.ads:38 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Marshal_Pkg at extension_admission_marshal_pkg.ads:29 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (0 checks)
+  Extension_Admission_Marshal_Pkg.Claw_Admit_Decide_Codes at extension_admission_marshal_pkg.ads:31 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Marshal_Pkg.Claw_Admit_Status_Codes at extension_admission_marshal_pkg.ads:46 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
 in unit extension_admission_pkg, 4 subprograms and packages out of 4 analyzed
-  Extension_Admission_Pkg at extension_admission_pkg.ads:43 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (0 checks)
-  Extension_Admission_Pkg.Decide at extension_admission_pkg.ads:101 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
-  Extension_Admission_Pkg.Is_Admissible at extension_admission_pkg.ads:98 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (0 checks)
-  Extension_Admission_Pkg.Meets_Floor at extension_admission_pkg.ads:89 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Pkg at extension_admission_pkg.ads:51 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (0 checks)
+  Extension_Admission_Pkg.Decide at extension_admission_pkg.ads:109 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)
+  Extension_Admission_Pkg.Is_Admissible at extension_admission_pkg.ads:106 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (0 checks)
+  Extension_Admission_Pkg.Meets_Floor at extension_admission_pkg.ads:97 flow analyzed (0 errors, 0 checks, 0 warnings and 0 pragma Assume statements) and proved (1 checks)

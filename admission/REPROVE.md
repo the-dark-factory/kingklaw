@@ -105,3 +105,25 @@ in about forty lines. The table is the specification in its most portable
 form, the licence permits it, and nothing here is offended by it. A gate you
 wrote from a table you checked is a better gate for you than one you took on
 faith.
+
+## The licence header, and why it does not disturb any of this
+
+The Ada sources here are vendored copies of **immutable wu round outputs**. The
+factory's driver refuses to overwrite a round whose provenance records that the
+proof gate accepted it, so the header could not be added at emission without
+invalidating the exact bytes the proof, the ledger entry and the off-seat
+admission signature all refer to.
+
+It is added at vendoring instead, by `scripts/stamp-licence.sh` in the
+ada-factory repo, as a reproducible transformation:
+
+    stamped = stamp-licence(round output)
+
+Every stamped file records the sha256 of the source it came from, in its own
+header and again in `DIGESTS.sha256`. So you can check the derivation yourself
+rather than taking our word for it.
+
+The stamp is comments only. `PROVE.txt` here is the re-prove **of the stamped
+sources**, and it matches the pre-stamp run exactly — 27 checks, 13 functional
+contracts (CVC5 66%, Trivial 34%), 14 termination, 0 unproved, 0 justified.
+That equality is the evidence the comments are inert; it is not an assumption.

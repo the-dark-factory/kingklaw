@@ -1,3 +1,11 @@
+--  Copyright (C) 2026 The Dark Factory Ltd
+--  SPDX-License-Identifier: AGPL-3.0-or-later
+--  Forged and machine-checked by The Dark Factory. This file is the
+--  vendored copy of an IMMUTABLE wu round output. This comment block is
+--  the only difference from it; nothing below this line is altered.
+--  Reproduce with scripts/stamp-licence.sh in the ada-factory repo.
+--  Unstamped source sha256: 27c835a1ae2a005a71b6a4b286c011dd49e4c10e2a505afec3ebdd30fbdc31d0
+--
 -- Extension_Admission_Pkg -- whether one extension artefact may be admitted to
 -- load, or is refused with its reason named. A neutral admission decider: it
 -- names no bundle, no plugin, no manifest field, no file layout and no

@@ -1,3 +1,11 @@
+--  Copyright (C) 2026 The Dark Factory Ltd
+--  SPDX-License-Identifier: AGPL-3.0-or-later
+--  Forged and machine-checked by The Dark Factory. This file is the
+--  vendored copy of an IMMUTABLE wu round output. This comment block is
+--  the only difference from it; nothing below this line is altered.
+--  Reproduce with scripts/stamp-licence.sh in the ada-factory repo.
+--  Unstamped source sha256: 61bc7072b278076bf52a38594620f2bcc1a53433444bf08bb413d45b97cd564e
+--
 -- Extension_Admission_Abi_Pkg -- the integer boundary of the proven admission
 -- decider. It decodes six UNTRUSTED integers into Extension_Admission_Pkg's
 -- enumerations, asks that package the admission question, and encodes the

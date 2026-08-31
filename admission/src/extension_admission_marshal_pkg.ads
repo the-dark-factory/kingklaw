@@ -1,3 +1,11 @@
+--  Copyright (C) 2026 The Dark Factory Ltd
+--  SPDX-License-Identifier: AGPL-3.0-or-later
+--  Forged and machine-checked by The Dark Factory. This file is the
+--  vendored copy of an IMMUTABLE wu round output. This comment block is
+--  the only difference from it; nothing below this line is altered.
+--  Reproduce with scripts/stamp-licence.sh in the ada-factory repo.
+--  Unstamped source sha256: 2cd8991f6960b8375ed0ae9801db4e6d0ff4fdf7a2f350417be55aff63c7e3c2
+--
 -- Extension_Admission_Marshal_Pkg -- the C calling convention, and nothing else.
 -- It is the entire surface a host outside Ada ever touches. It converts integers to integers,
 -- calls the proven Extension_Admission_Abi_Pkg, and returns. It holds no state, allocates nothing,
