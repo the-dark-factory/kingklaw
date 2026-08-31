@@ -1,5 +1,7 @@
 # KingKlaw
 
+[简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md)
+
 **KingKlaw. He bows to none.**
 **Puts the king in the claw.**
 
