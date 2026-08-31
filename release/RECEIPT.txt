@@ -1,0 +1,20 @@
+KingKlaw release receipt — taken by clean anonymous clone, not by assertion.
+
+tag:              v0.1.2
+commit:           c7bf9aa425d4a2e8abb5d9da710cf2c5a850bb97
+cloned from:      https://github.com/the-dark-factory/kingklaw.git
+credentials:      none (GIT_TERMINAL_PROMPT=0, credential.helper disabled)
+alr version:      alr 2.1.0
+host:             Darwin arm64
+taken at:         2026-08-31T13:58:58Z
+
+alr build result: Success: Build finished successfully in 0.37 seconds.
+library produced: admission/lib/libkingklaw_admission.dylib 
+
+WHY THIS FILE EXISTS. A clone-and-build is expensive and environment-fragile
+to recompute — it passed by hand and failed under the chain runner for reasons
+that were costing more to chase than the check was worth. Evidence like that
+belongs in a RECORD taken when the work was done, not in a check re-run on
+every glance. The chain verifies this receipt names the CURRENT tag; if the
+tag moves on, the receipt goes stale and the link goes loose, which is the
+honest behaviour.
